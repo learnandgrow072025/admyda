@@ -151,10 +151,10 @@ const Home = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
+			  { name: 'Generative & Agentic AI', path: '/analytics/GenerativeAI', gradient: 'GenerativeAI-gradient'},
               { name: 'Healthcare', path: '/analytics/healthcare', gradient: 'healthcare-gradient' },
               { name: 'Supply Chain', path: '/analytics/supply-chain', gradient: 'supply-chain-gradient' },
-              { name: 'Automotive', path: '/analytics/automotive', gradient: 'automotive-gradient' },
-              { name: 'Others', path: '/analytics/others', gradient: 'others-gradient' }
+              { name: 'Automotive', path: '/analytics/automotive', gradient: 'automotive-gradient' }
             ].map((industry, index) => (
               <motion.div
                 key={index}
@@ -165,7 +165,7 @@ const Home = () => {
               >
                 <Link to={industry.path}>
                   <div className={`${industry.gradient} rounded-xl p-8 text-white text-center h-40 flex items-center justify-center shadow-lg hover:shadow-xl transition-all`}>
-                    <h3 className="text-2xl font-bold">{industry.name}</h3>
+                    <h3 className="text-2xl font-bold text-gray-700">{industry.name}</h3>
                   </div>
                 </Link>
               </motion.div>

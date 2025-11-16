@@ -65,6 +65,11 @@ body {
   background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
 }
 
+.GenerativeAI-gradient {
+  background: linear-gradient(135deg, #1f3bff 0%, #2bbef6 50%, #3cf2b5 100%);
+  color: #fff;
+}
+
 .glass-effect {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
@@ -76,4 +81,27 @@ body {
     radial-gradient(circle at 25px 25px, rgba(255,255,255,0.1) 2px, transparent 0),
     radial-gradient(circle at 75px 75px, rgba(255,255,255,0.1) 2px, transparent 0);
   background-size: 100px 100px;
+}
+
+/* Marquee */
+.marquee-container {
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+}
+
+.marquee {
+  display: inline-block;
+  padding-left: 100%;
+  will-change: transform;
+  animation: marquee 15s linear infinite;
+}
+
+.marquee:hover {
+  animation-play-state: paused; /* Pause on hover */
+}
+
+@keyframes marquee {
+  0%   { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
 }

@@ -79,13 +79,13 @@ const SupplyChainAnalytics = () => {
           >
             <div className="flex justify-center mb-6">
               <div className="bg-white bg-opacity-20 p-4 rounded-full">
-                <Truck className="h-12 w-12 text-white" />
+                <Truck className="h-12 w-12 text-gray-600" />
               </div>
             </div>
-            <h1 className="text-5xl lg:text-6xl font-bold mb-6">
+            <h1 className="text-5xl lg:text-6xl font-bold mb-6 text-gray-900">
               Supply Chain Analytics
             </h1>
-            <p className="text-xl mb-8 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl mb-8 max-w-3xl mx-auto leading-relaxed text-gray-900">
               Transform your supply chain operations with intelligent analytics. Optimize inventory, 
               reduce costs, and improve delivery performance with data-driven insights.
             </p>
@@ -187,65 +187,18 @@ const SupplyChainAnalytics = () => {
         </div>
       </section>
 
-      {/* Case Studies */}
-      <section className="py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Success Stories
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Real transformations achieved by companies using our supply chain analytics solutions
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {caseStudies.map((study, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: index * 0.2 }}
-                className="bg-white rounded-xl p-8 shadow-lg border border-gray-100"
-              >
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">{study.title}</h3>
-                <div className="space-y-4">
-                  <div>
-                    <span className="font-semibold text-red-600">Challenge:</span>
-                    <p className="text-gray-700 mt-1">{study.challenge}</p>
-                  </div>
-                  <div>
-                    <span className="font-semibold text-blue-600">Solution:</span>
-                    <p className="text-gray-700 mt-1">{study.solution}</p>
-                  </div>
-                  <div>
-                    <span className="font-semibold text-green-600">Result:</span>
-                    <p className="text-gray-700 mt-1">{study.result}</p>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-pink-600 to-yellow-600">
+      <section className="supply-chain-gradient py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-4xl font-bold text-white mb-4">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Ready to Optimize Your Supply Chain?
             </h2>
-            <p className="text-xl text-gray-100 mb-8 max-w-2xl mx-auto">
+            <p className="text-xl text-gray-100 mb-8 max-w-2xl mx-auto text-gray-900">
               Transform your supply chain operations with our proven analytics solutions and expert guidance.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

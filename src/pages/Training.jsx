@@ -9,7 +9,7 @@ const Training = () => {
   const courses = [
     {
       title: 'Healthcare Analytics',
-      duration: '14 weeks',
+      duration: '14 weeks (Weekend Classes)',
       level: 'Beginner',
       price: '₹28,000 + 18% GST',
       Total: '₹29,500',
@@ -29,8 +29,8 @@ const Training = () => {
     },
     {
       title: 'SQL',
-      duration: '6 weeks',
-      level: 'Beginner to Advanced',
+      duration: '6 weeks (Weekend Classes)',
+      level: 'Beginner',
       price: '₹8,000 + 18% GST ',
       Total: '₹9,440',
       Batches: 3,
@@ -49,8 +49,8 @@ const Training = () => {
     },
     {
       title: 'Data Visualization - Tableau',
-      duration: '6 weeks',
-      level: 'Beginner to Advanced',
+      duration: '6 weeks (Weekend Classes)',
+      level: 'Beginner',
       price: '₹10,000 + 18% GST ',
       Total: '₹11,800',
       Batches: 3,
@@ -69,8 +69,8 @@ const Training = () => {
     },
     {
       title: 'Microsoft Excel',
-      duration: '6 weeks',
-      level: 'Beginner to Intermediate',
+      duration: '6 weeks (Weekend Classes)',
+      level: 'Beginner',
       price: '₹6,000 + 18% GST',
       Total: '₹7,080',
       Batches: 3,
@@ -89,8 +89,8 @@ const Training = () => {
     },
     {
       title: 'Healthcare Specialization',
-      duration: '8 weeks',
-      level: 'Beginner to Intermediate',
+      duration: '8 weeks (Weekend Classes)',
+      level: 'Beginner',
       price: '₹20,000 + 18% GST',
       Total: '₹23,600',
       Batches: 3,
@@ -109,8 +109,8 @@ const Training = () => {
     },
     {
       title: 'Python for Data Science',
-      duration: '10 weeks',
-      level: 'Beginner to Intermediate',
+      duration: '10 weeks (Weekend Classes)',
+      level: 'Beginner',
       price: '₹14,000 + 18% GST',
       Total: '₹16,520',
       Batches: 2,
@@ -168,10 +168,10 @@ const Training = () => {
             transition={{ duration: 0.8 }}
             className="text-center text-white"
           >
-            <h1 className="text-5xl lg:text-6xl font-bold mb-6">
+            <h1 className="text-5xl lg:text-6xl font-bold mb-6 text-gray-900">
               Analytics Training Programs
             </h1>
-            <p className="text-xl mb-8 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl mb-8 max-w-3xl mx-auto leading-relaxed text-gray-900">
               Master data analytics with our comprehensive training programs. From fundamentals to advanced specializations, 
               we offer courses designed by industry experts to accelerate your career.
             </p>
@@ -240,6 +240,19 @@ const Training = () => {
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Choose from our comprehensive range of analytics courses designed for different skill levels and career goals
+            </p>
+			<p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              ==================================================================
+            </p>
+			  <div className="marquee-container py-1">
+				<span className="marquee text-xl text-blue-900 font-bold">
+				  Enroll in two or more courses and get 10% discount&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;
+				  Enroll in two or more courses and get 10% discount&nbsp;&nbsp;•&nbsp;&nbsp;
+				</span>
+			  </div>
+			<p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              ==================================================================
             </p>
           </motion.div>
 
@@ -369,10 +382,10 @@ const Training = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-4xl font-bold text-white mb-4">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Ready to Advance Your Career?
             </h2>
-            <p className="text-xl text-gray-100 mb-8 max-w-2xl mx-auto">
+            <p className="text-xl text-gray-900 mb-8 max-w-2xl mx-auto">
               Join thousands of professionals who have transformed their careers with our comprehensive analytics training programs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

@@ -12,10 +12,10 @@ const Navbar = () => {
   const isActive = (path) => location.pathname === path;
 
   const analyticsSubItems = [
+	{ name: 'Generative & Agentic AI', path: '/analytics/GenerativeAI' },
     { name: 'Healthcare Analytics', path: '/analytics/healthcare' },
     { name: 'Supply Chain Analytics', path: '/analytics/supply-chain' },
-    { name: 'Automotive Analytics', path: '/analytics/automotive' },
-    { name: 'Others', path: '/analytics/others' }
+    { name: 'Automotive Analytics', path: '/analytics/automotive' }
   ];
 
   return (
@@ -105,6 +105,17 @@ const Navbar = () => {
               }`}
             >
               Training
+            </Link>
+			
+			<Link
+              to="/about"
+              className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                isActive('/about')
+                  ? 'text-blue-600 bg-blue-50'
+                  : 'text-gray-700 hover:text-blue-600'
+              }`}
+            >
+              About Us
             </Link>
 
             <Link to="/register">

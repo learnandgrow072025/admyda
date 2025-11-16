@@ -82,13 +82,13 @@ const AutomotiveAnalytics = () => {
           >
             <div className="flex justify-center mb-6">
               <div className="bg-white bg-opacity-20 p-4 rounded-full">
-                <Car className="h-12 w-12 text-white" />
+                <Car className="h-12 w-12 text-gray-600" />
               </div>
             </div>
-            <h1 className="text-5xl lg:text-6xl font-bold mb-6">
+            <h1 className="text-5xl lg:text-6xl font-bold mb-6 text-gray-900">
               Automotive Analytics
             </h1>
-            <p className="text-xl mb-8 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl mb-8 max-w-3xl mx-auto leading-relaxed text-gray-900">
               Drive innovation and efficiency in the automotive industry with our comprehensive analytics solutions. 
               From manufacturing optimization to customer insights, we power your digital transformation.
             </p>
@@ -99,41 +99,6 @@ const AutomotiveAnalytics = () => {
               </Button>
             </Link>
           </motion.div>
-        </div>
-      </section>
-
-      {/* Benefits Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Measurable Impact
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our automotive analytics solutions deliver tangible results across key performance indicators
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {benefits.map((benefit, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.8, delay: index * 0.1 }}
-                className="bg-white rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-shadow"
-              >
-                <div className="text-4xl mb-4">{benefit.icon}</div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">{benefit.title}</h3>
-                <div className="text-2xl font-bold text-teal-600">{benefit.value}</div>
-              </motion.div>
-            ))}
-          </div>
         </div>
       </section>
 
@@ -172,48 +137,6 @@ const AutomotiveAnalytics = () => {
                 <p className="text-gray-600 leading-relaxed">
                   {solution.description}
                 </p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Use Cases */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Key Use Cases
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Real-world applications of our automotive analytics solutions across different business functions
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {useCases.map((useCase, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: index * 0.2 }}
-                className="bg-white rounded-xl p-8 shadow-lg"
-              >
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">{useCase.title}</h3>
-                <p className="text-gray-600 mb-6">{useCase.description}</p>
-                <div className="space-y-2">
-                  {useCase.features.map((feature, featureIndex) => (
-                    <div key={featureIndex} className="flex items-center text-sm text-gray-700">
-                      <div className="w-2 h-2 bg-teal-500 rounded-full mr-3"></div>
-                      {feature}
-                    </div>
-                  ))}
-                </div>
               </motion.div>
             ))}
           </div>
@@ -267,17 +190,17 @@ const AutomotiveAnalytics = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-teal-600 to-cyan-600">
+      <section className="automotive-gradient py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-4xl font-bold text-white mb-4">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Ready to Drive Innovation?
             </h2>
-            <p className="text-xl text-gray-100 mb-8 max-w-2xl mx-auto">
+            <p className="text-xl text-gray-100 mb-8 max-w-2xl mx-auto text-gray-900">
               Transform your automotive operations with our cutting-edge analytics solutions and industry expertise.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

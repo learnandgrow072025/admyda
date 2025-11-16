@@ -81,15 +81,12 @@ const Register = () => {
   };
 
   const analyticsServices = [
+	'Generative & Agentic AI',
     'Healthcare Analytics',
     'Supply Chain Analytics',
     'Automotive Analytics',
-    'Retail & E-commerce Analytics',
-    'Financial Services Analytics',
-    'Manufacturing Analytics',
-    'Real Estate Analytics',
-    'HR Analytics',
-    'Custom Analytics Solution'
+    'Custom Analytics Solution',
+    'Others'
   ];
 
   const trainingCourses = [

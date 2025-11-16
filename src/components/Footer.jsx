@@ -24,11 +24,27 @@ const Footer = () => {
                 <span>+91 99805 07690</span>
               </div>
             </div>
+			<div className="flex space-x-4 mt-6">
+              <a
+				href="https://www.linkedin.com/in/admydaanalytics"
+				target="_blank"
+				rel="noopener noreferrer"
+				aria-label="AdMyDa Analytics on LinkedIn"
+				className="inline-flex"
+			  >
+				<Linkedin className="h-5 w-5 text-gray-300 hover:text-white cursor-pointer transition-colors" />
+			  </a>
+            </div>
           </div>
 
           <div>
             <span className="text-lg font-semibold mb-4 block">Analytics</span>
             <ul className="space-y-2">
+			  <li>
+                <Link to="/analytics/GenerativeAI" className="text-gray-300 hover:text-white transition-colors">
+                  Generative & Agentic AI
+                </Link>
+              </li>
               <li>
                 <Link to="/analytics/healthcare" className="text-gray-300 hover:text-white transition-colors">
                   Healthcare Analytics
@@ -42,11 +58,6 @@ const Footer = () => {
               <li>
                 <Link to="/analytics/automotive" className="text-gray-300 hover:text-white transition-colors">
                   Automotive Analytics
-                </Link>
-              </li>
-              <li>
-                <Link to="/analytics/others" className="text-gray-300 hover:text-white transition-colors">
-                  Other Industries
                 </Link>
               </li>
             </ul>
@@ -66,23 +77,20 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
+				India:
                 <div className="flex items-center text-gray-300">
                   <MapPin className="h-4 w-4 mr-2" />
-                  <span>Begur Main Road, Hongasandra, Bangalore, India</span>
+                  <span>Begur Main Road, Hongasandra, Bangalore - 560068, India</span>
+                </div>
+              </li>
+			  <li>
+				North America:
+                <div className="flex items-center text-gray-300">
+                  <MapPin className="h-4 w-4 mr-2" />
+                  <span>99 Broadway ave, LPH11, Toronto - M4P0E3, Canada</span>
                 </div>
               </li>
             </ul>
-            <div className="flex space-x-4 mt-6">
-              <a
-				href="https://www.linkedin.com/in/admydaanalytics"
-				target="_blank"
-				rel="noopener noreferrer"
-				aria-label="AdMyDa Analytics on LinkedIn"
-				className="inline-flex"
-			  >
-				<Linkedin className="h-5 w-5 text-gray-300 hover:text-white cursor-pointer transition-colors" />
-			  </a>
-            </div>
           </div>
         </div>
 

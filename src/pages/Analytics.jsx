@@ -2,11 +2,19 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Heart, Truck, Car, Building2 } from 'lucide-react';
+import { ArrowRight, Heart, Truck, Car, BrainCircuit } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Analytics = () => {
   const analyticsVerticals = [
+    {
+      title: 'Generative & Agentic AI',
+      description: 'Domain-tuned LLMs with agent workflows automate insights, summarize data, and act securely.',
+      icon: BrainCircuit,
+      path: '/analytics/GenerativeAI',
+      gradient: 'GenerativeAI-gradient',
+      features: ['Domain-tuned LLMs for healthcare', 'Agentic Workflows & Tool Integration', 'Summarization & Decision Support', 'Data Engineering & Analytics']
+    },
     {
       title: 'Healthcare Analytics',
       description: 'Transform patient care and operational efficiency with advanced healthcare analytics solutions.',
@@ -30,14 +38,6 @@ const Analytics = () => {
       path: '/analytics/automotive',
       gradient: 'automotive-gradient',
       features: ['Manufacturing Analytics', 'Quality Control', 'Predictive Maintenance', 'Customer Insights']
-    },
-    {
-      title: 'Other Industries',
-      description: 'Customized analytics solutions for retail, finance, manufacturing, and more industries.',
-      icon: Building2,
-      path: '/analytics/others',
-      gradient: 'others-gradient',
-      features: ['Custom Solutions', 'Industry Expertise', 'Scalable Platforms', 'ROI Optimization']
     }
   ];
 
@@ -103,11 +103,11 @@ const Analytics = () => {
                 <div className={`${vertical.gradient} p-6`}>
                   <div className="flex items-center mb-4">
                     <div className="bg-white bg-opacity-20 p-3 rounded-lg mr-4">
-                      <vertical.icon className="h-8 w-8 text-white" />
+                      <vertical.icon className="h-8 w-8 text-gray-500" />
                     </div>
-                    <h3 className="text-2xl font-bold text-white">{vertical.title}</h3>
+                    <h3 className="text-2xl font-bold text-gray-900">{vertical.title}</h3>
                   </div>
-                  <p className="text-white text-opacity-90 mb-4">
+                  <p className="text-gray-900 text-opacity-90 mb-4">
                     {vertical.description}
                   </p>
                 </div>
@@ -174,7 +174,7 @@ const Analytics = () => {
               <img 
                 className="w-full h-96 object-cover rounded-2xl shadow-lg"
                 alt="Analytics team working on data visualization and business intelligence"
-               src="https://images.unsplash.com/photo-1686061593213-98dad7c599b9" />
+               src="/analytics-solutions.png" />
             </motion.div>
           </div>
         </div>
